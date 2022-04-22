@@ -24,8 +24,9 @@
 
 html {
   font-size: 62.5%;
+  color: var(--text-main);
   scroll-behavior: smooth;
-  background-color: var(--text-main);
+  background-color: var(--bg-main);
 }
 
 body {
@@ -50,6 +51,26 @@ ul {
   display: block;
   padding: 1rem 2.5rem;
   border-radius: 5px;
+}
+
+.container{
+  max-width: 90%;
+  margin: 0 auto;
+}
+
+.flex {
+  display: flex;
+}
+.f-justify-center {
+  justify-content: center;
+}
+
+.f-align-center {
+  align-items: center;
+}
+
+.f-column {
+  flex-direction: column;
 }
 
 
@@ -123,10 +144,6 @@ ul {
 
 /* MAIN STYLES */
 
-#main {
-  transform: translateY(7.5rem);
-}
-
 
 /* HERO SECTION */
 
@@ -173,3 +190,36 @@ ul {
   padding-left: 10rem;
   padding-right: 10rem;
 }
+
+
+/* FOOTER STYLES */
+.footer {
+  padding: 3rem 0;
+}
+
+.footer, .footer a, .footer a:visited, .footer a:link {
+  color: var(--text-faded);
+  transition: color .2s ease-in-out;
+}
+
+.footer a:hover {
+  color: var(--text-main);
+}
+
+
+
+.social-list {
+  width: 30%;
+  justify-content: space-evenly;
+  margin-bottom: 1rem;
+}
+
+.fa-brands {
+  font-size: 2.4rem;
+}
+
+
+
+
+
+

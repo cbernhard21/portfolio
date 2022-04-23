@@ -1,12 +1,12 @@
 /* variables */
 
-:root {
+/* :root {
   --text-main: rgb(250, 250, 250);
   --text-secondary: #fff;
   --text-faded: rgba(250, 250, 250, .5);
   --bg-main: #042241;
   --bg-header: #042241;
-}
+} */
 
 
 /* reset */
@@ -24,9 +24,7 @@
 
 html {
   font-size: 62.5%;
-  color: var(--text-main);
   scroll-behavior: smooth;
-  background-color: var(--bg-main);
 }
 
 body {
@@ -37,6 +35,32 @@ body {
   overflow-x: hidden;
   overflow-y: scroll;
   letter-spacing: 1.5px;
+  background-color: var(--bg-main);
+  color: var(--text-main);
+}
+
+.blue {
+  --text-main: rgb(250, 250, 250);
+  --text-secondary: #fff;
+  --text-faded: rgba(250, 250, 250, .5);
+  --bg-main: #042241;
+  --bg-header: #042241;
+}
+
+.dark {
+  --text-main: #babbbd;
+  --text-secondary: #C9D1D9;
+  --text-faded: #babbbd80;
+  --bg-main: #0D1117;
+  --bg-header: #161B22;
+}
+
+.light {
+  --text-main: #0D1117;
+  --text-secondary: #161B22;
+  --text-faded: #0D111790;
+  --bg-main: #fafafa;
+  --bg-header: #e4e4e4;
 }
 
 a:link, a:visited {

@@ -28,23 +28,7 @@ const setYear = () => {
     document.querySelector('#date').innerHTML = year;
 }
 
-async function getVideos(){
-    const videoContainer = document.querySelector('#video-container');
-    const url = `https://youtube.googleapis.com/youtube/v3/search?part=snippet&channelId=UCnBq6q_POCNVwvCJ1KCNYUA&maxResults=10&order=date&key=AIzaSyDbhMyxIM5M3AUyg1TxEV7-3fnpuTR8g4c`;
-    const response = await fetch(url);
-    const data = await response.json();
-    const videos = data.items;
-    console.log(videos);
 
-    for(let video of videos) {
-        console.log(video.snippet.title)
-        videoContainer.innerHTML += `
-            <img src="${video.snippet.thumbnails.default.url}" />
-        `
-    }
-}   
-
-getVideos();
 setYear();
 
 

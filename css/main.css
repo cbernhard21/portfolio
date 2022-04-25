@@ -81,6 +81,10 @@ p{
   max-width: 50ch;
 }
 
+img {
+  max-width: 100%;
+}
+
 .about, .projects, .contact {
   padding: 7.5rem 0;
 }
@@ -255,8 +259,17 @@ PROJECTS SECTION
 }
 
 .tv-project-card {
-  border: 1px solid red;
+  background-color: var(--bg-header);
+  border-radius: 10px;
+  max-width: 40rem;
+  margin-bottom: 2rem;
+  overflow: hidden;
 }
+
+.card-content {
+  padding: 1rem;
+}
+
 
 .tv-project-card-clip {
   width: 75%;

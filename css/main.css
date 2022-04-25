@@ -110,6 +110,10 @@ p{
   margin: 0 auto;
 }
 
+.grid-span-all {
+  grid-column: 1/-1;
+}
+
 .flex {
   display: flex;
 }
@@ -241,10 +245,27 @@ p{
 /***************************
 PROJECTS SECTION
 ***************************/
+.projects-grid {
+  display: grid;
+  grid-template-columns: max-content 1fr;
+}
+
+.tv-projects-card-container {
+  justify-self: center;
+}
+
+.tv-project-card {
+  border: 1px solid red;
+}
+
+.tv-project-card-clip {
+  width: 75%;
+}
 
 
-
-/* FOOTER STYLES */
+/***************************
+FOOTER SECTION
+***************************/
 .footer {
   padding: 3rem 0;
   background-color: var(--bg-header);

@@ -33,6 +33,7 @@
 
   <main id="main" class="container">
 
+    <!-- HERO SECTION -->
     <section id="hero" class="section-container">
       <div class="hero-flex-container">
         <h1 class="hero-title"><span>&#60;</span> Hello World <span>&#62;</span><br> My Name is Christopher Bernhard</h1>
@@ -47,29 +48,40 @@
       
     </section>
 
+    <!-- ABOUT SECTION -->
     <section id="about" class="about section-container">
       <h2>About me section</h2>
       <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi perferendis sit velit expedita excepturi, quae accusamus. Obcaecati, alias? Unde inventore, error quis sint asperiores voluptatibus illo doloribus laboriosam consectetur quidem beatae quaerat eaque ipsa repellat quas sunt, ad accusantium eum voluptas incidunt magni eos veniam maxime. Adipisci sint quam, quas consequuntur nisi illum numquam at nobis quaerat assumenda itaque nam, asperiores dicta fugit nesciunt laudantium veniam ea dolores minus dolor. Dolores dignissimos ad et aut optio enim tenetur vitae culpa quod voluptates. Officia, iure deserunt assumenda reiciendis labore qui quisquam corporis beatae libero maxime dolores inventore explicabo. Modi, adipisci eos.</p>
     </section>
 
-
     <section id="projects" class="projects section-container">
 
+
+      <!-- WEB PROJECT -->
       <article class="project-wrapper">
         <h2 class="project-heading">Web Projects</h2>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi perferendis sit velit expedita excepturi, quae accusamus. Obcaecati, alias? Unde inventore, error quis sint asperiores voluptatibus illo doloribus laboriosam consectetur quidem beatae quaerat eaque ipsa repellat quas sunt, ad accusantium eum voluptas incidunt magni eos veniam maxime. Adipisci sint quam, quas consequuntur nisi illum numquam at nobis quaerat assumenda itaque nam, asperiores dicta fugit nesciunt laudantium veniam ea dolores minus dolor. Dolores dignissimos ad et aut optio enim tenetur vitae culpa quod voluptates. Officia, iure deserunt assumenda reiciendis labore qui quisquam corporis beatae libero maxime dolores inventore explicabo. Modi, adipisci eos.</p>
       </article>
       
-      <article class="project-wrapper projects-grid">
+
+      <!-- VIDEO POP-UP -->
+      <div class="test">
+        <div class="pop-up-container"></div>
+      </div>
+      
+
+
+      <!-- TELEVISION PROJECTS -->
+      <article class="project-wrapper">
         <h2 class="project-heading grid-span-all">Television Credits</h2>
-        <p>I have been working in live television for over 20 years.  Mainly as a director, assistant director, and technical director.  The majority of my work has been on studio based programs.  I currently work at the top rated television station in Chicago, IL, WLS-TV where I direct newscasts and special project programs.</p>
+        <p class="tv-projects-text">I have been working in live television for over 20 years.  Mainly as a director, assistant director, and technical director.  The majority of my work has been on studio based programs.  I currently work at the top rated television station in Chicago, IL, WLS-TV.  Where I direct newscasts and special project programs.</p>
 
         <div class="tv-projects-card-container">
-          <h3>Career Highlights</h3>
+          <h3 class="grid-span-all">Career Highlights</h3>
           <div class="tv-project-card">
-            <a href="https://youtu.be/NnhUGSx7N4M" target="_blank">
-              <img src="images/thumbnails/auto-show-thumbnail-min.PNG" alt="2022 Chicago Auto Show Logo">
-            </a>
+            <!-- <a href="https://youtu.be/NnhUGSx7N4M" target="_blank"> -->
+              <img src="images/thumbnails/auto-show-thumbnail-min.PNG" title="2022 Chicago Auto Show Logo" class="tv-card-frame">
+            <!-- </a> -->
             <div class="card-content">
               <p class="tv-project-card-title">2022 Chicago Auto Show Special</p>
               <p class="tv-project-card-job">Director</p>
@@ -129,21 +141,25 @@
       </article>
     </section>
 
+    <!-- CONTACT SECTION -->
     <section id="contact" class="contact section-container">
       <h2>Contact me section</h2>
       <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi perferendis sit velit expedita excepturi, quae accusamus. Obcaecati, alias? Unde inventore, error quis sint asperiores voluptatibus illo doloribus laboriosam consectetur quidem beatae quaerat eaque ipsa repellat quas sunt, ad accusantium eum voluptas incidunt magni eos veniam maxime. Adipisci sint quam, quas consequuntur nisi illum numquam at nobis quaerat assumenda itaque nam, asperiores dicta fugit nesciunt laudantium veniam ea dolores minus dolor. Dolores dignissimos ad et aut optio enim tenetur vitae culpa quod voluptates. Officia, iure deserunt assumenda reiciendis labore qui quisquam corporis beatae libero maxime dolores inventore explicabo. Modi, adipisci eos.</p>
     </section>
   </main>
 
-  <footer class="footer container flex f-align-center f-column">
-    
-    <ul class="social-list flex">
-      <li class="social-item"><a href="#" title="GitHub"><i class="fa-brands fa-github"></i></a></li>
-      <li class="social-item"><a href="#" title="CodePen"><i class="fa-brands fa-codepen"></i></a></li>
-      <li class="social-item"><a href="#" title="LinkedIn"><i class="fa-brands fa-linkedin"></i></a></li>
-    </ul>
-    <p class="footer-text">Built by Christopher Bernhard</p>
-    <p class="footer-text">&copy; <span id="date"></span> </p>
+  <!-- FOOTER SECTION -->
+  <footer class="footer ">
+    <div class="container flex f-align-center f-column">
+      <ul class="social-list flex">
+        <li class="social-item"><a href="#" title="GitHub"><i class="fa-brands fa-github"></i></a></li>
+        <li class="social-item"><a href="#" title="CodePen"><i class="fa-brands fa-codepen"></i></a></li>
+        <li class="social-item"><a href="#" title="LinkedIn"><i class="fa-brands fa-linkedin"></i></a></li>
+      </ul>
+      <p class="footer-text">Built by Christopher Bernhard</p>
+      <p class="footer-text">&copy; <span id="date"></span> </p>
+    </div>
+
   </footer>
 
   <script src="js/app.js"></script>

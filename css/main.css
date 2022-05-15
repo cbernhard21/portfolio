@@ -32,7 +32,7 @@
 } */
 
 
-/* reset */
+/* RESET */
 
 *,
 *::after,
@@ -43,7 +43,7 @@
 }
 
 
-/* set up */
+/* SET UP */
 
 html {
   font-size: 62.5%;
@@ -154,8 +154,13 @@ img {
   letter-spacing: 2px;
 }
 
-.nav a:link,
-.nav a:visited {
+.header a:link,
+.header a:visited {
+  color: var(--text-faded);
+  transition: all 0.2s ease-in-out;
+}
+
+.header a:hover {
   color: var(--text-secondary);
 }
 
@@ -177,12 +182,6 @@ img {
 .logo-name {
   font-weight: 700;
   font-size: 2.4rem;
-  color: var(--text-faded);
-  transition: .2s all ease-in-out;
-}
-
-.logo-name:hover {
-  color: var(--text-main);
 }
 
 .nav-main {
@@ -201,10 +200,10 @@ img {
   margin-right: 0;
 }
 
-
 /* MAIN STYLES */
-
-
+#main {
+  position: relative;
+}
 
 /* HERO SECTION */
 
@@ -249,13 +248,41 @@ img {
 /***************************
 PROJECTS SECTION
 ***************************/
-.projects-grid {
-  display: grid;
-  grid-template-columns: max-content 1fr;
+
+/* VIDEO POP UP */
+
+.test {
+  position: fixed;
+  width: 90%;
+  height: 85vh;
+  top: 10vh;
+  left: 50%;
+  transform: translateX(-50%);
+  border: 2px solid white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(255, 255, 255, .1);
 }
 
-.tv-projects-card-container {
-  justify-self: center;
+.pop-up-container {
+  width: 90%;
+  height: 75vh;
+  background-color: red;
+  
+}
+
+
+.tv-projects-text {
+  max-width: 80ch;
+  margin-bottom: 4rem;
+}
+
+.tv-projects-card-container{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  column-gap: 1rem;
+  row-gap: 2rem;
 }
 
 .tv-project-card {
@@ -270,11 +297,9 @@ PROJECTS SECTION
   padding: 1rem;
 }
 
-
 .tv-project-card-clip {
   width: 75%;
 }
-
 
 /***************************
 FOOTER SECTION

@@ -133,6 +133,10 @@ img {
   flex-direction: column;
 }
 
+.hidden {
+  display: none;
+}
+
 
 /* HEADER STYLES */
 
@@ -249,29 +253,9 @@ img {
 PROJECTS SECTION
 ***************************/
 
-/* VIDEO POP UP */
-
-.test {
-  position: fixed;
-  width: 90%;
-  height: 85vh;
-  top: 10vh;
-  left: 50%;
-  transform: translateX(-50%);
-  border: 2px solid white;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: rgba(255, 255, 255, .1);
+.project-wrapper {
+  margin-bottom: 10rem;
 }
-
-.pop-up-container {
-  width: 90%;
-  height: 75vh;
-  background-color: red;
-  
-}
-
 
 .tv-projects-text {
   max-width: 80ch;

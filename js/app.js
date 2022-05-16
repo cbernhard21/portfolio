@@ -28,8 +28,10 @@ const setYear = () => {
     document.querySelector('#date').innerHTML = year;
 }
 
-
 setYear();
+
+
+
 
 
 
